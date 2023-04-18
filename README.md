@@ -1,7 +1,7 @@
 # keil-studio-get-started
 Get started example for use in Keil Studio
 
-## How to setup your Keil Studio Desktop Development Environment:
+## How to setup your Development Environment using Keil Studio VSCode Extension:
 1. Download & Install [Microsoft Visual Studio Code](https://code.visualstudio.com/download) for your operating system.
 2. Launch Visual Studio Code. From the 'View' menu open 'Extensions' (ctrl+shift+x). Search for "Keil Studio Pack" and select the install button.
 3. From the 'View' menu open 'Source Control'. Select 'Clone Repository' and copy the url for this repo: https://github.com/Arm-Examples/keil-studio-get-started into the input dialog
