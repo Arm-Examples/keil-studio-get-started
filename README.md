@@ -7,10 +7,10 @@ Get started example for use in Keil Studio
 3. From the 'View' menu open 'Source Control'. Select 'Clone Repository' and copy the url for this repo: https://github.com/Arm-Examples/keil-studio-get-started into the input dialog
 4. Specify the destination folder to clone to and select 'Open' when asked 'Would you like to open the cloned directory?'
 5. Open the 'Explorer' view (ctrl-shift-e) and select the file 'vcpkg-configuration.json'. This file instructs [Microsoft vcpkg](https://github.com/microsoft/vcpkg-tool#vcpkg-artifacts) to install the prerequisite artifacts required by the 'Arm CMSIS csolution' extentsion for building the projects of the solution.
-  - ctools: [CMSIS-Toolbox](https://github.com/Open-CMSIS-Pack/devtools/blob/main/tools/projmgr/docs/Manual/Overview.md)
-  - cmake 
-  - ninja 
-  - gcc: arm-none-eabi-gcc (GNU Arm Embedded Toolchain)
+    - ctools: [CMSIS-Toolbox](https://github.com/Open-CMSIS-Pack/devtools/blob/main/tools/projmgr/docs/Manual/Overview.md)
+    - cmake 
+    - ninja 
+    - gcc: arm-none-eabi-gcc (GNU Arm Embedded Toolchain)
 6. In case vcpkg shows an error in the VSCode status bar, you can see furth information in the "OUTPUT" for 'vcpkg'.
 In case of 'Error: Unable to resolve dependency ... in <registry>' you may need to update the registry by running 'vcpkg: Run vcpkg command'
 from the 'View' menu's 'Command Palette...' (ctrl+shift+p) typing: `z-ce update <registry>`. 
