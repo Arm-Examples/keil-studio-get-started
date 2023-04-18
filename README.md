@@ -27,3 +27,10 @@ This allows you to run tools from the [CMSIS-Toolbox](https://github.com/Open-CM
 - [`cbuildgen`](https://open-cmsis-pack.github.io/devtools/buildmgr/latest/cbuildgen.html#cbuildgen_invocation) 
 - [`cbuild`](https://github.com/Open-CMSIS-Pack/cbuild#usage) for an orchestrated build of one or more `configurations` of a csolution.
 
+## Execute Project
+
+The project is configured for execution on Arm Virtual Hardware (AVH) modelling an MPS2 board running an Arm Cortex-M3 processor. This model is part of the Keil MDK Professional Edition for Windows and removes the requirement for a physical hardware board.
+
+```bash
+./ $ VHT_MPS2_Cortex-M3 -f vht-config.txt -a ./out/hello/AVH/Debug/Debug+AVH.elf
+```

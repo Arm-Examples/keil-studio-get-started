@@ -1,0 +1,30 @@
+solution:
+
+  compiler: GCC                               # toolchain used for this solution
+
+  misc:                                       # toolchain specific settings
+    - for-compiler: GCC
+      C:
+        - -std=gnu11
+      Link:
+        - --specs=nano.specs
+        - --specs=rdimon.specs
+
+  packs:                                      # add packs required by the projects
+    - pack: ARM::CMSIS@5.9.0
+
+  target-types:                               # add hardware target types (don't forget to add the required packs)
+    - type: AVH                               # runs on Arm Virtual Hardware
+      device: ARMCM3                          
+
+  build-types:                                # defines toolchain options for build-types 'debug' and 'release'
+    - type: Debug
+      optimize: none
+      debug: on
+
+    - type: Release
+      optimize: balanced
+      debug: off
+
+  projects:                                   # list of projects
+    - project: ./hello/hello.cproject.yml
