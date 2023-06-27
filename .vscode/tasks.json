@@ -1,9 +1,28 @@
 {
-	"version": "2.0.0",
 	"tasks": [
 		{
+			"type": "shell",
+			"label": "Run AVH",
+			"command": "VHT_MPS2_Cortex-M3",
+			"args": [
+				"-f",
+				"vht_config.txt",
+ 				"${command:cmsis-csolution.getBinaryFile}",
+				"-Q",
+				"10"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},		{
 			"type": "cmsis-csolution.build",
-			"project": "${command:cmsis-csolution.getCprjPath}",
+			"solution": "${command:cmsis-csolution.getSolutionPath}",
+			"project": "${command:cmsis-csolution.getProjectPath}",
+			"buildType": "${command:cmsis-csolution.getBuildType}",
+			"targetType": "${command:cmsis-csolution.getTargetType}",
+			"rebuild": false,
 			"problemMatcher": [],
 			"label": "cmsis-csolution.build: Build"
 		}
