@@ -11,9 +11,6 @@ Get started example for use in Keil Studio
     - cmake 
     - ninja 
     - gcc: arm-none-eabi-gcc (GNU Arm Embedded Toolchain)
-6. In case vcpkg shows an error in the VSCode status bar, you can see furth information in the "OUTPUT" for 'vcpkg'.
-In case of 'Error: Unable to resolve dependency ... in <registry>' you may need to update the registry by running 'vcpkg: Run vcpkg command'
-from the 'View' menu's 'Command Palette...' (ctrl+shift+p) typing: `z-ce update <registry>`. 
 7. By default the 'Arm CMSIS csolution' extension is configured to automatically convert *.csolution.[yml|yaml] files into a *.cprj file for each 'context' of the solution. If you do not see any *.cprj file side by side the 'hello.cproject.yml' you can right click on the 'get-started.csolution.yml' file in the 'Explorer' View and run 'convert'. The convert command may fail due to missing packs. In this case run the command 'CMSIS: Install required packs for the active solution' from the 'Command Palette' (ctrl-shift-p).
 8. Open the 'CMSIS' view from the side bar and press the 'Build' button. The last line of the ninja build output will tell you where you can
 find the application elf file. Alternatively you can select 'Build' or 'Rebuild' from the context menu of the `*.cprj` file of the solution context
