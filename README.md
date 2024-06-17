@@ -1,4 +1,6 @@
 # keil-studio-get-started
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/keil-studio-get-started/ci.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis) 
+
 Get started example for use in Keil Studio
 
 ## How to setup your Development Environment using Keil Studio VSCode Extension:
